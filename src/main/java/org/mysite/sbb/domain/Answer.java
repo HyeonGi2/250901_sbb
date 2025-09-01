@@ -2,7 +2,7 @@
 250901 홍현기
 domain 또는 답변 entity 작성
 엔티티로 테이블 매핑
-
+데이터베이스 테이블 생성
 -------------------------*/
 
 package org.mysite.sbb.domain;
