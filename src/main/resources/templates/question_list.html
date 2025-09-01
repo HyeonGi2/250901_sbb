@@ -1,0 +1,25 @@
+<!-------------------------
+250901 홍현기
+타임리프 적용
+th:each="question : ${questionList} => 자바 코드 연결
+
+QuestionController의 list 메서드에서 조회한 질문 목록 데이터를,
+'questionList'라는 이름으로 Model 객체에 저장.
+타임리프는 Model 객체에 저장한 questionList를 ${questionList}로 읽을 수 있다.
+ex) 자바의 for each문
+--------------------------->
+
+<table>
+    <thead>
+    <tr>
+        <th>제목</th>
+        <th>작성일시</th>
+    </tr>
+    </thead>
+    <tbody>
+    <tr th:each="question : ${questionList}">
+        <td th:text="${question.subject}"></td>
+        <td th:text="${question.createDate}"></td>
+    </tr>
+    </tbody>
+</table>
