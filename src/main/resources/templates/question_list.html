@@ -9,8 +9,9 @@ QuestionController의 list 메서드에서 조회한 질문 목록 데이터를,
 ex) 자바의 for each문
 --------------------------->
 
-<link rel="stylesheet" type="text/css" th:href="@{/bootstrap.min.css}">
-<div class="container my-3">
+
+<html layout:decorate="~{layout}">
+<div layout:fragment="content" class="container my-3">
     <table class="table">
         <thead class="table-dark">
         <tr>
